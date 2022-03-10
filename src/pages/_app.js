@@ -1,11 +1,16 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
+import theme from "../theme";
 
-const App = ({ Component, pageProps }) => {
+import "@fontsource/inter";
+
+function App({ Component, pageProps }) {
   return (
-    <ChakraProvider>
-      <Component {...pageProps} />
+    <ChakraProvider theme={theme}>
+      <Container maxW="container.sm">
+        <Component {...pageProps} />
+      </Container>
     </ChakraProvider>
   );
-};
+}
 
 export default App;
