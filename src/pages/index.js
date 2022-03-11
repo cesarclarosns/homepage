@@ -7,6 +7,7 @@ import Projects from "../components/projects";
 import Contact from "../components/contact";
 import MyStack from "../components/myStack";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 function HomePage() {
   const bioRef = useRef(null);
@@ -29,6 +30,7 @@ function HomePage() {
       <MyStack myStackRef={myStackRef} />
       <Projects projectsRef={projectsRef} />
       <Contact contactRef={contactRef} />
+      <Footer />
     </>
   );
 }

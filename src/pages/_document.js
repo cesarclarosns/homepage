@@ -8,7 +8,10 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <title>César Claros | Desarrollador Full Stack</title>
+          <link rel="icon" type="image/png" href="/black-square.png" />
+        </Head>
         <body>
           {/* 👇 Here's the script */}
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />

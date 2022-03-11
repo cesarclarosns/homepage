@@ -79,23 +79,28 @@ function MenuLinks({ open, setOpen, headerProps }) {
   let linkProps = {
     ...(open ? { d: "block" } : { d: "none" }),
     fontSize: "1.5rem",
-    fontWeight: "400",
+    fontWeight: "500",
     bgSize: "220%",
     p: "1rem 2rem",
     _hover: {
-      color: "#60c689",
+      color: "brand.100",
     },
   };
 
   let boxIconsContainerProps = {
+    position: "fixed",
+    bottom: "1rem",
+    left: "50%",
+    transform: "translate(-50%, 0)",
     ...(!open && { d: "none" }),
   };
 
   let iconLinkProps = {
     boxSize: "2rem",
     cursor: "pointer",
+    mx: "0.5rem",
 
-    _hover: { color: "#60c689" },
+    _hover: { color: "brand.100" },
   };
 
   return (
@@ -108,7 +113,7 @@ function MenuLinks({ open, setOpen, headerProps }) {
             handleScroll(bioRef.current);
           }}
         >
-          Bio
+          BIO
         </Link>
         <Link
           {...linkProps}
@@ -117,7 +122,7 @@ function MenuLinks({ open, setOpen, headerProps }) {
             handleScroll(myStackRef.current);
           }}
         >
-          Stack
+          STACK
         </Link>
         <Link
           {...linkProps}
@@ -126,7 +131,7 @@ function MenuLinks({ open, setOpen, headerProps }) {
             handleScroll(projectsRef.current);
           }}
         >
-          Proyectos
+          PROYECTOS
         </Link>
         <Link
           {...linkProps}
@@ -135,12 +140,22 @@ function MenuLinks({ open, setOpen, headerProps }) {
             handleScroll(contactRef.current);
           }}
         >
-          Contacto
+          CONTACTO
         </Link>
       </Box>
       <Box {...boxIconsContainerProps}>
-        <Icon as={Github} {...iconLinkProps} />
-        <Icon as={Linkedin} {...iconLinkProps} />
+        <Icon
+          as={Github}
+          {...iconLinkProps}
+          onClick={() => window.open("https://github.com/cesarclarosns")}
+        />
+        <Icon
+          as={Linkedin}
+          {...iconLinkProps}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/cesarclarosns/")
+          }
+        />
       </Box>
     </Box>
   );
