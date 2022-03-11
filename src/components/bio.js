@@ -1,14 +1,12 @@
 import {
   Box,
-  VStack,
   Heading,
-  Text,
+  Link,
   Tabs,
   Tab,
   TabList,
   TabPanels,
   TabPanel,
-  Link,
 } from "@chakra-ui/react";
 
 function Bio({ bioRef }) {

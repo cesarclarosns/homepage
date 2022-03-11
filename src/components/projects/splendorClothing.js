@@ -1,6 +1,6 @@
 import { VStack, Badge, Text, Box, Tooltip } from "@chakra-ui/react";
 
-import { Github, Linkedin } from "@styled-icons/boxicons-logos";
+import { Github } from "@styled-icons/boxicons-logos";
 import { LinkExternal } from "@styled-icons/boxicons-regular";
 
 import IconLink from "../general/iconLink";

@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import {
   Box,
+  Button,
   FormControl,
   FormLabel,
   Heading,
   Input,
-  Text,
   SimpleGrid,
-  Button,
+  Text,
   Textarea,
   useToast,
   VStack,
@@ -32,9 +32,17 @@ const Contact = ({ contactRef }) => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("/api/mail", {
-      method: "post",
-      body: JSON.stringify(formData),
+    // fetch("/api/mail", {
+    //   method: "post",
+    //   body: JSON.stringify(formData),
+    // });
+
+    toast({
+      title: "Tu mensaje no fue enviado.",
+      description: "Por favor escríbeme a este correo: cesarclarosns@aol.com",
+      status: "error",
+      duration: 10000,
+      isClosable: true,
     });
 
     setFormData({
@@ -42,15 +50,6 @@ const Contact = ({ contactRef }) => {
       email: "",
       subject: "",
       message: "",
-    });
-
-    toast({
-      title: "Mensaje enviado.",
-      description:
-        "Tu mensaje fue enviado, me pondré en contacto contigo muy pronto!.",
-      status: "success",
-      duration: 10000,
-      isClosable: true,
     });
   }
 

@@ -2,8 +2,7 @@ import { Box, Text, Link, SimpleGrid, Badge, VStack } from "@chakra-ui/react";
 
 import IconLink from "../general/iconLink";
 
-import { Github, Linkedin } from "@styled-icons/boxicons-logos";
-import { LinkExternal } from "@styled-icons/boxicons-regular";
+import { Github } from "@styled-icons/boxicons-logos";
 import { Youtube } from "@styled-icons/boxicons-logos";
 
 function CS50() {
@@ -91,49 +90,3 @@ function CS50() {
 }
 
 export default CS50;
-
-// function CS50() {
-//   return (
-//     <Box>
-//       <Text>
-//         Algunos de los primeros proyectos de programación web que realizé para
-//         el curso{" "}
-//         <Link onClick={() => window.open("https://cs50.harvard.edu/web/2020/")}>
-//           CS50W
-//         </Link>
-//         .
-//       </Text>
-//       <SimpleGrid w="full">
-//         <Box d="flex" flexDir="row" w="full">
-//           <Box
-//             d="flex"
-//             flexDirection="column"
-//             p="1rem"
-//             justifyContent="center"
-//             alignItems="center"
-//           >
-//             <Text>Commerce</Text>
-//             <Box textAlign="center">
-//               <Icon as={Github} onClick={() => window.open("")} />
-//               <Icon as={LinkExternal} />
-//               <Icon as={Youtube} />
-//             </Box>
-//           </Box>
-//           <Box
-//             p="1rem"
-//             d="flex"
-//             w="full"
-//             justifyContent="start"
-//             alignItems="center"
-//           >
-//             Sitio de subastas de comercio electrónico similar a eBay que
-//             permitirá a los usuarios publicar listados de subastas, hacer
-//             ofertas en listados, comentar sobre esos listados y agregar listados
-//             a una "lista de observación".
-//             <IconLink icon={Github} to="" />
-//           </Box>
-//         </Box>
-//       </SimpleGrid>
-//     </Box>
-//   );
-// }

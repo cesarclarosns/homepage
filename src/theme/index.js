@@ -41,7 +41,6 @@ const config = {
 const styles = {
   global: {
     "html, body": {
-      userSelect: "none",
       m: "0px",
       color: "gray.200",
     },
