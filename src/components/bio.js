@@ -8,17 +8,8 @@ import {
   TabList,
   TabPanels,
   TabPanel,
+  Link,
 } from "@chakra-ui/react";
-
-const events = {
-  "1996/11": "Nací en Puebla, México.",
-  "2021/06":
-    "Completé el programa de Ingeniería en Biotecnología del Instituto Politécnico Nacional.",
-  "2022/01":
-    "Finalmente mi aventura por el mundo del software tomó sentido al haber googleado y leído sobre un montón de temas, y completar los cursos de CS50 de Introducción a las Ciencias de la Computación e Introducción a la Inteligencia Artificial porque pude comprender muchas cosas!",
-  "2022/02":
-    "Actualmente estoy desarrollando Chatter y estoy muy intersado en aprender más sobre todo lo relacionado con el desarrollo y operaciones de software que vive en la web.",
-};
 
 function Bio({ bioRef }) {
   return (
@@ -27,14 +18,48 @@ function Bio({ bioRef }) {
 
       <Tabs align="center">
         <TabList>
-          {Object.keys(events).map((date, i) => (
-            <Tab key={`date-${i}`}>{date}</Tab>
-          ))}
+          <Tab>1996/11</Tab>
+          <Tab>2021/06</Tab>
+          <Tab>2022/01</Tab>
+          <Tab>2022/02</Tab>
         </TabList>
+
         <TabPanels>
-          {Object.values(events).map((description, i) => (
-            <TabPanel key={`description-${i}`}>{description}</TabPanel>
-          ))}
+          <TabPanel>Nací en Puebla, México.</TabPanel>
+          <TabPanel>
+            Completé el programa de Ingeniería en Biotecnología del Instituto
+            Politécnico Nacional.
+          </TabPanel>
+          <TabPanel>
+            Finalmente mi aventura por el mundo del software tomó sentido al
+            haber googleado y leído sobre un montón de temas, y completar los
+            cursos de CS50 de{" "}
+            <Link
+              onClick={() =>
+                window.open(
+                  "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"
+                )
+              }
+            >
+              Introducción a las Ciencias de la Computación
+            </Link>{" "}
+            e{" "}
+            <Link
+              onClick={() =>
+                window.open(
+                  "https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python"
+                )
+              }
+            >
+              Introducción a la Inteligencia Artificial
+            </Link>{" "}
+            porque pude comprender muchas cosas!
+          </TabPanel>
+          <TabPanel>
+            Actualmente estoy desarrollando Chatter y estoy muy intersado en
+            aprender más sobre todo lo relacionado con el desarrollo y
+            operaciones de software que vive en la web.
+          </TabPanel>
         </TabPanels>
       </Tabs>
     </Box>

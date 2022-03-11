@@ -25,7 +25,13 @@ function CS50() {
       <Text>
         Algunos de los primeros proyectos de programación web que realizé para
         el curso{" "}
-        <Link onClick={() => window.open("https://cs50.harvard.edu/web/2020/")}>
+        <Link
+          onClick={() =>
+            window.open(
+              "https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript"
+            )
+          }
+        >
           CS50W
         </Link>
         .

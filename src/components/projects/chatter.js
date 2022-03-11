@@ -24,7 +24,9 @@ function Chatter() {
           Stack
         </Badge>
       </Box>
-      <Text>Django REST Framework y React Native (Expo).</Text>
+      <Text>
+        Django REST Framework, Django Channels, 100ms y React Native (Expo).
+      </Text>
     </VStack>
   );
 }
