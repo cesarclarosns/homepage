@@ -20,10 +20,10 @@ function Intro() {
     <VStack {...boxContainerProps}>
       <VStack {...boxInnerContainerProps}>
         <Box mb="2rem">
-          <Heading fontSize="5xl" mt="4rem">
+          <Heading textAlign="center" fontSize="5xl" mt="4rem">
             CÉSAR CLAROS
           </Heading>
-          <Heading fontSize="2xl" color="gray.400">
+          <Heading fontSize="2xl" color="gray.400" textAlign="center">
             DESARROLLADOR FULL STACK
           </Heading>
         </Box>
