@@ -27,7 +27,7 @@ function MyStack({ myStackRef }) {
       <Badge colorScheme="blue" fontSize="1rem">
         Otros
       </Badge>
-      <Text>Git, Stripe, Windows y Linux</Text>
+      <Text>Git, Stripe, Windows y Linux.</Text>
     </VStack>
   );
 }

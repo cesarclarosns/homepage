@@ -45,7 +45,7 @@ function SplendorClothing() {
       </Box>
       <Text>
         React, Redux Toolkit, Redux-Saga, Chakra UI, Firebase, Stripe, NodeJS y
-        Heroku
+        Heroku.
       </Text>
     </VStack>
   );

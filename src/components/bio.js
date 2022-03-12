@@ -51,7 +51,7 @@ function Bio({ bioRef }) {
             >
               Introducción a la Inteligencia Artificial
             </Link>{" "}
-            porque pude comprender muchas cosas!
+            porque pude comprender muchas cosas!.
           </TabPanel>
           <TabPanel>
             Actualmente estoy desarrollando Chatter y estoy muy intersado en
