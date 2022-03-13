@@ -7,7 +7,7 @@ function MyStack({ myStackRef }) {
       <Badge colorScheme="blue" fontSize="1rem">
         Lenguajes de programación
       </Badge>
-      <Text>Python, JavaScript, HTML y CSS.</Text>
+      <Text>Python, JavaScript, C#, HTML y CSS.</Text>
       <Badge colorScheme="blue" fontSize="1rem">
         Back-end Frameworks
       </Badge>
