@@ -1,4 +1,4 @@
-import { VStack, Badge, Text, Box, Tooltip } from "@chakra-ui/react";
+import { VStack, Badge, Text, Box } from "@chakra-ui/react";
 
 import { Github } from "@styled-icons/boxicons-logos";
 import { LinkExternal } from "@styled-icons/boxicons-regular";
@@ -14,14 +14,12 @@ function SplendorClothing() {
           to="https://github.com/cesarclarosns/splendor-clothing"
         />
 
-        <Tooltip label="Tristemente solo disponible de 9 am a 9 pm.">
-          <Box>
-            <IconLink
-              icon={LinkExternal}
-              to="https://tranquil-ravine-78875.herokuapp.com/"
-            />
-          </Box>
-        </Tooltip>
+        <Box>
+          <IconLink
+            icon={LinkExternal}
+            to="https://tranquil-ravine-78875.herokuapp.com/"
+          />
+        </Box>
       </Box>
       <Text>
         Este sitio web de compra de ropa permite a sus usuarios una vez que se
