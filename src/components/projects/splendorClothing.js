@@ -24,16 +24,14 @@ function SplendorClothing() {
       <Text>
         Este sitio web de compra de ropa permite a sus usuarios una vez que se
         registran agregar prendas de ropa a su "carrito" y realizar el pago de
-        su carrito con su tarjeta de crédito o débito. React, Redux Toolkit,
-        Redux-Saga y Chakra UI fueron empleados para el desarrollo del
-        front-end.
+        su carrito con su tarjeta de crédito o débito.
         <br />
         <br />
-        El front-end emplea Firebase como servicio de autenticación y base de
-        datos primaria (para guardar el carrito de los usuarios y las prendas de
-        ropa) y Stripe como servicio de pagos con tarjeta. NodeJS fue empleado
-        para el desarrollo del servidor que alberga el front-end y valida los
-        pagos realizados en el front-end con Stripe.
+        Firebase fue empleado como servicio de autenticación y base de datos
+        primaria (para guardar el carrito de los usuarios y las prendas de ropa)
+        y Stripe como servicio de pagos con tarjeta. NodeJS fue empleado para el
+        desarrollo del servidor que alberga el front-end y valida los pagos
+        realizados con Stripe.
       </Text>
 
       <Box>
