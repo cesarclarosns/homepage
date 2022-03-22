@@ -43,12 +43,12 @@ const styles = {
     "html, body": {
       m: "0px",
       color: "gray.200",
-    },
-    "*": {
-      m: "0px",
+      fontSize: "14px",
     },
   },
 };
+
+const textStyles = {};
 
 const theme = {
   colors,

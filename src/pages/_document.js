@@ -9,7 +9,6 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <title>César Claros | Desarrollador Full Stack</title>
           <link rel="icon" type="image/png" href="/black-square.png" />
         </Head>
         <body>

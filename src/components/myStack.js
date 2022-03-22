@@ -11,15 +11,11 @@ function MyStack({ myStackRef }) {
       <Badge colorScheme="blue" fontSize="1rem">
         Back-end Frameworks
       </Badge>
-      <Text>Django REST Framework y NodeJS.</Text>
+      <Text>Django, ASP.NET y NodeJS.</Text>
       <Badge colorScheme="blue" fontSize="1rem">
         Front-end frameworks
       </Badge>
       <Text>React y NextJS (+ Redux).</Text>
-      <Badge colorScheme="blue" fontSize="1rem">
-        Full-stack frameworks
-      </Badge>
-      <Text>Django.</Text>
       <Badge colorScheme="blue" fontSize="1rem">
         Bases de datos
       </Badge>
@@ -27,7 +23,7 @@ function MyStack({ myStackRef }) {
       <Badge colorScheme="blue" fontSize="1rem">
         Otros
       </Badge>
-      <Text>Git, Stripe, Windows y Linux.</Text>
+      <Text>Git, Docker, Windows y Linux.</Text>
     </VStack>
   );
 }
