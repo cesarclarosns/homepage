@@ -22,7 +22,7 @@ function CS50() {
   return (
     <VStack>
       <Text>
-        Algunos de los primeros proyectos de programación web que realizé para
+        Algunos de los primeros proyectos de programación web que realicé para
         el curso{" "}
         <Link
           onClick={() =>
