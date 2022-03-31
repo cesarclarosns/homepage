@@ -11,7 +11,7 @@ function MyStack({ myStackRef }) {
       <Badge colorScheme="blue" fontSize="1rem">
         Back-end Frameworks
       </Badge>
-      <Text>Django, ASP.NET y NodeJS.</Text>
+      <Text>Django (+ Rest Framework) y NodeJS.</Text>
       <Badge colorScheme="blue" fontSize="1rem">
         Front-end frameworks
       </Badge>
